@@ -26,7 +26,7 @@ The standard user-site repository name must match the GitHub account: for `adetu
 
 - Confirm the biography, skills, and tool familiarity; add only substantiated experience.
 - Replace the contact notice with a verified email `mailto:` link and LinkedIn profile link. There is deliberately no fake address, active contact form, or invented profile URL.
-- Replace project outlines with real scope, dates, methods, evidence, and outcomes. The project graphics are decorative concepts, not measured performance charts.
+- Replace project outlines with real scope, dates, methods, evidence, and outcomes. The selected work entries are compact links to expandable project outlines, not completed case studies.
 - Add certifications only after verifying the title, issuer, date, and credential link. No credentials, employment, testimonials, or performance results are claimed.
 - Add a verified résumé link only after providing a résumé file.
 - Once the public URL is confirmed, add an absolute canonical URL and `og:url` in `index.html`. Optionally add a social preview image with an absolute `og:image` URL and alt text. These are omitted to avoid asserting an unconfirmed URL or missing asset.
@@ -34,11 +34,11 @@ The standard user-site repository name must match the GitHub account: for `adetu
 ## Files and customization
 
 - `index.html`: semantic sections, content, SEO and social metadata.
-- `styles.css`: responsive layout, CSS illustrations, colors, and typography. Edit the `:root` custom properties to adjust the palette.
-- `script.js`: accessible mobile menu, linked case-study expansion, and footer year.
+- `styles.css`: compact responsive layout, colors, and typography. Edit the `:root` custom properties to adjust the palette.
+- `script.js`: linked project-outline expansion and footer year.
 
-Navigation and case-study disclosures remain usable without JavaScript. The mobile menu supports Escape and reports its state with `aria-expanded`. The layout includes visible keyboard focus, a skip link, reduced-motion support, and no third-party requests or tracking.
+The About, Work, and Contact navigation remains visible on mobile and desktop. Navigation and native project disclosures remain usable without JavaScript. The layout includes visible keyboard focus, a skip link, and no animations, third-party requests, or tracking. LinkedIn is shown as pending rather than linked to an unverified profile; the GitHub link uses the known repository owner.
 
 ## Suggested review
 
-Check at narrow mobile and desktop widths, navigate with Tab and Enter, open the menu and dismiss with Escape, follow each project link, and verify all final contact links and claims before publishing. There is no automated test suite or build process.
+Check at narrow mobile and desktop widths, navigate with Tab and Enter, follow each project link, and verify all final contact links and claims before publishing. There is no automated test suite or build process.
