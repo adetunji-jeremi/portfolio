@@ -22,23 +22,22 @@ Visit `http://127.0.0.1:8000` in your local browser. Stop the server with Ctrl+C
 
 The standard user-site repository name must match the GitHub account: for `adetunji-jeremi`, that name is `adetunji-jeremi.github.io`. The current repository name, `jeremiahadetunji.github.io`, does not match that account, so GitHub normally serves it as a project site at `https://adetunji-jeremi.github.io/jeremiahadetunji.github.io/`. Confirm the actual URL in Pages settings. All asset links are relative, so the site supports either a project path or a user-site root. No deployment has been performed by creating these files.
 
-## Content to verify before using for applications
+## Content and review
 
-- Confirm the biography, skills, and tool familiarity; add only substantiated experience.
-- Replace the contact notice with a verified email `mailto:` link and LinkedIn profile link. There is deliberately no fake address, active contact form, or invented profile URL.
-- Replace project outlines with real scope, dates, methods, evidence, and outcomes. The selected work cards link to expandable project outlines, not completed case studies.
-- Add certifications only after verifying the title, issuer, date, and credential link. No credentials, employment, testimonials, or performance results are claimed.
-- Add a verified résumé link only after providing a résumé file.
-- Once the public URL is confirmed, add an absolute canonical URL and `og:url` in `index.html`. Optionally add a social preview image with an absolute `og:image` URL and alt text. These are omitted to avoid asserting an unconfirmed URL or missing asset.
+Professional information, employment periods, education, skills, and email were supplied by Jeremiah for this content update. Selected Work contains experience summaries, not independently verified case-study outcomes. No performance metrics or testimonials have been added.
+
+LinkedIn remains pending because a verified URL has not been supplied. GitHub uses the known repository owner. No phone number is published. Add a résumé or credential only when the actual file or verification link is available.
+
+This content update is for review only. Do not push or publish it until Jeremiah approves.
 
 ## Files and customization
 
 - `index.html`: semantic sections, content, SEO and social metadata.
 - `styles.css`: 960px responsive layout, off-white and blue palette, project cards, and system sans-serif typography. Edit the `:root` custom properties to adjust the palette.
-- `script.js`: linked project-outline expansion and footer year.
+- `script.js`: footer year.
 
-The About, Work, and Contact navigation remains visible on mobile and desktop. Navigation and native project disclosures remain usable without JavaScript. The layout includes visible keyboard focus, a skip link, and no animations, third-party requests, or tracking. LinkedIn is shown as pending rather than linked to an unverified profile; the GitHub link uses the known repository owner.
+The About, Work, and Contact navigation remains visible on mobile and desktop. Navigation and all professional content remain usable without JavaScript. The layout includes visible keyboard focus, a skip link, and no animations, third-party requests, or tracking. LinkedIn is shown as pending rather than linked to an unverified profile; the GitHub link uses the known repository owner.
 
 ## Suggested review
 
-Check at narrow mobile and desktop widths, navigate with Tab and Enter, follow each project link, and verify all final contact links and claims before publishing. There is no automated test suite or build process.
+Check at narrow mobile and desktop widths, navigate with Tab and Enter, check the navigation and email links, and verify all final contact links and claims before publishing. There is no automated test suite or build process.
