@@ -109,3 +109,29 @@ summary:hover { color: var(--accent); }
 @media (max-width: 480px) {
   .intro-copy > p:not(.eyebrow):not(.muted) { font-size: 16px; }
 }
+
+/* Compact mobile hero; all existing desktop rules remain unchanged. */
+@media (max-width: 767px) {
+  .intro {
+    grid-template-columns: minmax(0, 1fr) clamp(100px, 28vw, 120px);
+    align-items: start;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+  .intro-copy, .intro-description { display: contents; }
+  .intro .eyebrow { grid-column: 1 / -1; margin: 0; }
+  .intro h1 { grid-column: 1; grid-row: 2; margin: 0; }
+  .intro-opening { grid-column: 1; grid-row: 3; }
+  .intro-remainder { grid-column: 1 / -1; }
+  .intro-opening, .intro-remainder { font-size: 16px; line-height: 1.75; color: #505057; }
+  .intro .profile-photo {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    align-self: start;
+    justify-self: end;
+    width: clamp(100px, 28vw, 120px);
+    height: clamp(100px, 28vw, 120px);
+  }
+  .intro .actions { grid-column: 1 / -1; margin-top: 8px; flex-direction: row; }
+  .intro .button { flex: 1; }
+}
