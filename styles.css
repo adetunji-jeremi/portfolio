@@ -135,3 +135,15 @@ summary:hover { color: var(--accent); }
   .intro .actions { grid-column: 1 / -1; margin-top: 8px; flex-direction: row; }
   .intro .button { flex: 1; }
 }
+
+/* Featured SteamAQ entry only; other project cards retain their existing styles. */
+.featured-case-study { border-top: 3px solid var(--accent); }
+.featured-case-study .project-category { color: var(--accent); }
+.featured-case-study .case-preview { margin: 0 0 22px; padding: 14px 10px 10px; background: #f7f9fd; border: 1px solid #e6ebf5; border-radius: 6px; }
+.featured-case-study .preview-label { display: block; font-size: 11px; font-weight: 600; color: var(--text); }
+.featured-case-study svg { display: block; width: 100%; height: auto; margin-top: 4px; }
+.featured-case-study svg rect { fill: var(--accent); }
+.featured-case-study svg line { stroke: #ccd4e2; }
+.featured-case-study svg text { fill: var(--muted); font: 11px sans-serif; }
+.featured-case-study .preview-source { display: block; font-size: 10px; line-height: 1.6; color: var(--muted); }
+.featured-case-study:focus-visible { border-color: var(--accent); }
