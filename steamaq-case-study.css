@@ -1,0 +1,62 @@
+/* Scoped editorial additions; homepage styles remain untouched. */
+.case-study { padding-block: 32px 44px; }
+.case-study .article-body { max-width: 740px; margin-inline: auto; }
+.case-study .article-body article > h1 { font-size: clamp(30px, 4vw, 42px); line-height: 1.2; margin: 24px 0; }
+.case-study .article-body article > h2 { margin: 48px 0 22px; font-size: 27px; line-height: 1.35; scroll-margin-top: 24px; }
+.case-study .article-body article > h3 { margin: 30px 0 18px; font-size: 20px; line-height: 1.4; scroll-margin-top: 24px; }
+.case-study .article-body article > p { margin-bottom: 22px; font-size: 17px; line-height: 1.85; }
+.case-study .article-body article > ul { padding-left: 24px; margin-block: 22px; }
+.case-study hr { border: 0; border-top: 1px solid var(--border); margin: 30px 0; }
+.case-study .back-link { font-size: 14px; }
+.case-study .toc { display: block; padding: 18px 20px; border: 1px solid var(--border); border-radius: 8px; margin-block: 28px; }
+.case-study .toc summary { padding: 0; }
+.case-study .toc ol { padding-left: 22px; margin-bottom: 0; }
+.case-study .toc a { font-size: 14px; }
+.case-study .toc li + li { margin-top: 8px; }
+.case-study figure { margin: 24px 0 30px; padding: 22px; border: 1px solid var(--border); border-radius: 10px; background: #fff; }
+.case-study figcaption { color: var(--muted); font-size: 13px; line-height: 1.7; margin-top: 16px; }
+.case-study .figure-title { font-size: 17px; letter-spacing: -.2px; margin-bottom: 16px; line-height: 1.4; }
+.case-study .chart-unit, .case-study .chart-note { font-size: 12px; color: var(--muted); margin: 0 0 12px; }
+.case-study .data-chart { width: 100%; height: auto; display: block; overflow: visible; }
+.case-study .data-chart text { font-family: inherit; fill: var(--text); font-size: 15px; }
+.case-study .data-chart .chart-label { font-weight: 600; font-size: 16px; }
+.case-study .data-chart .axis-label { fill: var(--muted); font-size: 13px; }
+.case-study .series-0 { fill: var(--accent); background: var(--accent); }
+.case-study .series-1 { fill: #717985; background: #717985; }
+.case-study .trend-line { stroke: var(--accent); stroke-width: 3; }
+.case-study .chart-grid { stroke: #e9e9ec; stroke-width: 1; }
+.case-study .chart-axis { stroke: #c8cad0; }
+.case-study .data-chart g:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
+.case-study .chart-legend { display: flex; gap: 20px; font-size: 13px; margin-bottom: 10px; }
+.case-study .chart-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.case-study .chart-legend i { width: 12px; height: 12px; border-radius: 2px; }
+.case-study .comparison-panels { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.case-study .metric-panel { min-width: 0; }
+.case-study .metric-panel h4 { margin: 0 0 8px; font-size: 16px; }
+.case-study .metric-panel .data-chart text { font-size: 23px; }
+.case-study .metric-panel .data-chart .axis-label { font-size: 19px; }
+.case-study .chart-data { margin-top: 14px; border: 0; }
+.case-study .chart-data summary { font-size: 13px; color: var(--accent); }
+.case-study .table-scroll { overflow-x: auto; margin: 20px 0; border: 1px solid var(--border); border-radius: 6px; }
+.case-study .table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.case-study table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.6; text-align: left; }
+.case-study th, .case-study td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.case-study thead { background: #f3f4f5; }
+.case-study tbody th { font-weight: 500; }
+.case-study tr:last-child td, .case-study tr:last-child th { border-bottom: 0; }
+.case-study .screenshot-placeholder { border: 1px dashed #bfc3cc; border-radius: 6px; padding: 18px; font-size: 14px; color: var(--muted); margin-top: 18px; }
+.case-study .closing { border-top: 1px solid var(--border); padding-top: 30px; margin-top: 36px; }
+@media (max-width: 767px) {
+  .case-study figure { padding: 16px; }
+  .case-study .monthly-chart { overflow-x: auto; }
+  .case-study .monthly-chart svg { min-width: 580px; }
+  .case-study .comparison-panels { grid-template-columns: 1fr; }
+  .case-study .data-chart text { font-size: 24px; }
+  .case-study .data-chart .chart-label { font-size: 27px; }
+  .case-study .data-chart .axis-label { font-size: 21px; }
+  .case-study .monthly-chart text { font-size: 15px; }
+  .case-study .monthly-chart .axis-label { font-size: 13px; }
+  .case-study .article-body article > h2 { font-size: 25px; }
+  .case-study .article-body article > p { font-size: 16px; }
+  .case-study th, .case-study td { padding: 9px 11px; }
+}
