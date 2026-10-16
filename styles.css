@@ -95,3 +95,17 @@ summary:hover { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* Portrait addition: scoped to the existing hero. */
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: center; gap: 40px; }
+.intro-copy { min-width: 0; }
+.intro-copy > p { max-width: 700px; }
+.intro-copy > p:not(.eyebrow):not(.muted) { font-size: 18px; line-height: 1.75; color: #505057; }
+.profile-photo { display: block; width: 300px; height: 300px; border-radius: 50%; object-fit: cover; object-position: center; border: 1px solid var(--border); }
+@media (max-width: 850px) {
+  .intro { grid-template-columns: 1fr; gap: 28px; }
+  .profile-photo { width: 200px; height: 200px; justify-self: center; }
+}
+@media (max-width: 480px) {
+  .intro-copy > p:not(.eyebrow):not(.muted) { font-size: 16px; }
+}
